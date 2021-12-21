@@ -291,7 +291,7 @@ formSearch.addEventListener("submit", (event) => {
 function getErrorText(element) {
 	element.insertAdjacentHTML('afterend', `
 		<div class="error-wrapper">
-			<img class="error_img" src="/img/12.png" alt="">
+			<img class="error_img" src="img/12.png" alt="">
 			<div class="error-text">
 				Что-то пошло не так... <br>Попробуйте перезагрузить страницу или зайдите позже.
 			</div>			
