@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BestMovies</title>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/css/feedback.css">
+</head>
+
+<body>
+	<div class="page-wrapper">
+		<header class="header">
+			<div class="header__content container">
+				<a href="index.html" class="header__logo">Best<span class="header__logo_big">Movies</span></a>
+				<a href="index.html" class="header__link">На главную</a>
+			</div>
+		</header>
+
+		<div class="feedback-wrapper container">
+			<div class="feedback">
+				<h1 class="feedback__title">Обратная связь</h1>
+				<form class="feedback__form">
+					<div class="feedback__input-wrapper">
+						<input type="text" name="feedback_author" class="feedback__input" id="feedback-name"
+							placeholder="Представьтесь" required>
+						<span class="feedback__validation-text feedback__validation-text_invisible" id="author-empty">Поле
+							обязательно для
+							заполнения</span>
+					</div>
+					<div class="feedback__input-wrapper">
+						<input type="email" name="feedback_email" class="feedback__input" id="feedback-email"
+							placeholder="E-mail, на который будет выслан ответ" required>
+						<span class="feedback__validation-text feedback__validation-text_invisible" id="email-empty">Поле
+							обязательно для
+							заполнения</span>
+						<span class="feedback__validation-text feedback__validation-text_invisible"
+							id="email-validation">Email
+							невалидный</span>
+					</div>
+					<div class="feedback__input-wrapper">
+						<input type="text" name="feedback_theme" class="feedback__input" id="feedback-theme"
+							placeholder="Тема сообщения" required>
+						<span class="feedback__validation-text feedback__validation-text_invisible" id="theme-empty">Поле
+							обязательно для
+							заполнения</span>
+					</div>
+					<div class="feedback__input-wrapper">
+						<textarea name="feedback_text" cols="80" rows="8" maxlength="2000" class="feedback__input"
+							id="feedback-text"
+							placeholder="Ваш вопрос, предложение, замечание или пожелание (максимум 2000 знаков)"
+							required></textarea>
+						<span class="feedback__validation-textarea feedback__validation-text_invisible" id="text-empty">Поле
+							обязательно для
+							заполнения</span>
+					</div>
+					<button class="feedback__button" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="footer__content container">© BestMovies</div>
+		</footer>
+	</div>
+
+
+	<script src="/js/feedback.js"></script>
+</body>
+
+</html>

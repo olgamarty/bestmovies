@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BestMovies</title>
+	<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Open+Sans&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+	<header class="header container">
+		<div class="header__content">
+			<a href="index.html" class="header__logo">Best<span class="header__logo_big">Movies</span></a>
+			<form>
+				<input type="text" class="header__search" placeholder="Поиск" />
+			</form>
+		</div>
+	</header>
+
+	<main class="container movies__wrapper">
+		<div class="movies"></div>
+	</main>
+
+	<div id="popup" class="popup">
+		<div class="popup__body">
+			<div class="popup__content">
+				<div class="popup__title-wrapper">
+					<h1 class="popup__title"></h1>
+					<div class="popup__close">&times;</div>
+				</div>
+				<div class="popup__info-wrapper"></div>
+
+				<div class="popup__movie-description"></div>
+
+				<div class="popup__comments-wrapper">
+					<h2 class="popup__comments-title">Рецензии зрителей</h2>
+
+					<ul class="comments-list"></ul>
+
+					<form method="post" class="popup__add-comments">
+						<div class="popup__author-inner">
+							<label class="popup__comment-label" for="comment-input">Представьтесь</label>
+							<input type="text" name="review_author" class="popup__comment-field" id="comment-input"
+								placeholder="Введите свое имя" required>
+						</div>
+						<div class="popup__comment-inner">
+							<label class="popup__comment-label" for="comment-textarea">Добавьте свою рецензию</label>
+							<textarea class="popup__comment-field" id="comment-textarea" name="review_text" rows="3"
+								placeholder="А что Вы думаете о фильме?" required></textarea>
+							<button class="popup__form-button" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container footer">
+		<div>© BestMovies</div>
+		<p><a class="footer__link" href="feedback.html">Обратная связь</a></p>
+	</footer>
+
+	<script src="/js/script.js"></script>
+</body>
+
+</html>
